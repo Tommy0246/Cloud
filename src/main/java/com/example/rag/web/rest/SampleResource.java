@@ -1,5 +1,6 @@
 package com.example.rag.web.rest;
 
+import com.example.rag.web.dto.Sample;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +13,9 @@ public class SampleResource {
         return "Hello " + value + "!";
     }
 
-    /*@GetMapping("/samples/dto/{value}")
+    @GetMapping("/samples/dto/{value}")
     public Sample helloJson(@PathVariable(value = "value", required = false) final String value) {
-        return new Sample(value: "Hello " + value + "!");
-    }*/
+        return new Sample("Hello " + value + "!");
+    }
 
 }
