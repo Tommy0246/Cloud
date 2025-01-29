@@ -1,4 +1,4 @@
-package com.example.rag.controller;
+package com.example.rag.web.rest;
 
 import com.example.rag.domain.Document;
 import com.example.rag.service.DocumentService;
